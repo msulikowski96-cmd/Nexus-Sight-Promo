@@ -1,26 +1,26 @@
 @import "tailwindcss";
 
 :root {
-  --color-primary: #C8AA6E; /* Hextech Gold */
-  --color-secondary: #0397AB; /* Hextech Blue */
-  --color-accent: #0AC8B9; /* Cyan */
+  --color-primary: #C89B3C;
+  --color-secondary: #0BC4E3;
+  --color-accent: #FF2D55;
 
-  --color-bg-light: #0A1428; /* Dark Blue */
-  --color-bg-dark: #010A13; /* Very Dark */
-  --color-bg-muted: #1E2328; /* Muted Dark */
+  --color-bg-light: #07091A;
+  --color-bg-dark: #07091A;
+  --color-bg-muted: #0D1228;
 
-  --color-text-primary: #F0E6D2; /* Light Gold/White */
-  --color-text-secondary: #A09B8C; /* Muted Gold */
-  --color-text-muted: #8A8275;
-  --color-text-inverse: #010A13;
+  --color-text-primary: #FFFFFF;
+  --color-text-secondary: #C89B3C;
+  --color-text-muted: #8899AA;
+  --color-text-inverse: #07091A;
 
-  --color-success: #00D7B0;
-  --color-warning: #F0E6D2;
-  --color-error: #E84057;
+  --color-success: #00D48A;
+  --color-warning: #F59E0B;
+  --color-error: #FF2D55;
 
-  --font-display: 'Rajdhani', sans-serif;
+  --font-display: 'Bebas Neue', cursive;
   --font-body: 'Inter', sans-serif;
-  --font-mono: 'JetBrains Mono', monospace;
+  --font-mono: 'Inter', monospace;
 }
 
 @theme inline {
@@ -44,19 +44,7 @@
 
 body {
   font-family: var(--font-body);
+  background: #07091A;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--color-bg-dark);
-  color: var(--color-text-primary);
-}
-
-/* Utilities for gaming vibe */
-.glitch-text {
-  text-shadow: 2px 0 var(--color-accent), -2px 0 var(--color-error);
-}
-
-.gold-gradient-text {
-  background: linear-gradient(to right, #F0E6D2, #C8AA6E);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
